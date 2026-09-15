@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Info</title>
+</head>
+<body>
+  <h1>Add Information</h1>
+
+  <form action="/add" method="POST" enctype="multipart/form-data">
+    <label>Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Comment</label><br>
+    <textarea name="comment"></textarea><br><br>
+
+    <label>Picture</label><br>
+    <input type="file" name="picture" accept="image/*" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p><a href="/login">Admin Login</a></p>
+</body>
+</html>
